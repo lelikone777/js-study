@@ -1,9 +1,9 @@
-let money = 500;
-let income = 100;
-let addExpenses = 'Вода, Еда, Фарфор, МРАМОР';
-let deposit = true;
-let mission = 1000;
-let period = 10;
+const money = 500;
+const income = 100;
+const addExpenses = 'Вода, Еда, Фарфор, МРАМОР';
+const deposit = true;
+const mission = 1000;
+const period = 10;
 
 console.log(typeof money);
 console.log(typeof income);
@@ -14,18 +14,16 @@ console.log(addExpenses.length);
 console.log('Период равен ' + period + ' месяцев');
 console.log('Цель заработать ' + mission + ' юани');
 
-addExpenses.toLowerCase();
-addExpenses.split(' ');
 console.log(addExpenses.toLowerCase().split(' '));
 
+const budgetDay = income / 30;
+console.log(budgetDay);
 
 
 
 
 
 
-
-//    - Привести строку addExpenses к нижнему регистру и разбить строку на массив, вывести массив в консоль
 
 //    - Объявить переменную budgetDay и присвоить дневной бюджет (доход за месяц / 30)
 
