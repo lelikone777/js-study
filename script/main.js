@@ -1,10 +1,8 @@
-<<<<<<< Updated upstream
-=======
-let money = 500; 
-let income = 100; 
-let addExpenses = 'Вода, еда, фарфор'; 
-let deposit = true; 
-let mission = 1000; 
+let money = 500;
+let income = 100;
+let addExpenses = 'Вода, Еда, Фарфор, МРАМОР';
+let deposit = true;
+let mission = 1000;
 let period = 10;
 
 console.log(typeof money);
@@ -13,12 +11,12 @@ console.log(typeof deposit);
 
 console.log(addExpenses.length);
 
-console.log('Период равен ' + period + ' месяцев'); 
+console.log('Период равен ' + period + ' месяцев');
 console.log('Цель заработать ' + mission + ' юани');
- 
+
 addExpenses.toLowerCase();
 addExpenses.split(' ');
-console.log(addExpenses.split(' ').toLowerCase());
+console.log(addExpenses.toLowerCase().split(' '));
 
 
 
@@ -42,4 +40,3 @@ console.log(addExpenses.split(' ').toLowerCase());
 
 
 // 4) Добавить папку или ветку со вторым уроком в свой репозиторий на GitHub
->>>>>>> Stashed changes
