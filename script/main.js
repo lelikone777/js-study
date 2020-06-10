@@ -4,17 +4,31 @@ const income = 100;
 const mission = 100;
 const period = 10;
 console.log(typeof income);
-
+console.log('Период равен ' + period + ' месяцев');
+console.log('Цель заработать ' + mission + ' юани');
 
 // 2
 const money = +prompt('Ваш месячный доход?', 90);
+console.log('Ваш месячный доход: ' + money);
 console.log(typeof money);
 // 3
 const addExpenses = prompt('Перечислите возможные расходы за рассчитываемый период через запятую', 'Вода, Еда, Фарфор, МРАМОР');
+console.log('возможные расходы за рассчитываемый период: ' + addExpenses);
+console.log(typeof addExpenses);
+console.log(addExpenses.length);
+console.log(addExpenses.toLowerCase().split(' '));
 
 // 4
 const deposit = confirm('Есть ли у вас депозит в банке?');
 console.log(typeof deposit);
+switch (deposit) {
+  case true:
+    console.log('депозит в банке присутсвует');
+    break
+  case false:
+    console.log('депозита нет');
+    break
+}
 
 // 5
 const expenses1 = prompt('Введите обязательную статью расходов?' , 'Вода');
