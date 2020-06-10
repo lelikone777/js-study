@@ -11,16 +11,16 @@ const period = 10;
 const money = +prompt('Ваш месячный доход?');
 
 // 3
-// const addExpenses = prompt('Перечислите возможные расходы за рассчитываемый период через запятую');
+const addExpenses = prompt('Перечислите возможные расходы за рассчитываемый период через запятую');
 
 // 4
-// const deposit = confirm('Есть ли у вас депозит в банке?');
-// console.log(deposit);
+const deposit = confirm('Есть ли у вас депозит в банке?');
+console.log(deposit);
 
 // 5
-// const expenses1 = prompt('Введите обязательную статью расходов?');
+const expenses1 = prompt('Введите обязательную статью расходов?');
 const amount1 = +prompt('Во сколько это обойдется?');
-// const expenses2 = prompt('Введите обязательную статью расходов?');
+const expenses2 = prompt('Введите обязательную статью расходов?');
 const amount2 = +prompt('Во сколько это обойдется?');
 
 // 6
