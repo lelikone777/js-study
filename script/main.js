@@ -58,19 +58,12 @@ let getExpensesMonth = function () {
 console.log(getExpensesMonth());
 
 
-function ExpensesList(r) {
-  return Array.from(r);
-} 
-ExpensesList('вода', 'Еда', 'Фарфор', 'МРАМОР');
+const expensesList = 'Вода, Еда, Фарфор, МРАМОР'
+const addExpenses = function() {
+return prompt('Перечислите возможные расходы за рассчитываемый период через запятую', expensesList);
+}
+console.log(addExpenses().split(" "));
 
-
-
-const addExpenses = function () {
-  return prompt(
-    "Перечислите возможные расходы за рассчитываемый период через запятую",
-    ExpensesList);
-};
-console.log(addExpenses(Array.from(ExpensesList)));
 
 // 2
 let getAccumulatedMonth = function () {
@@ -83,8 +76,8 @@ let accumulatedMonth = function () {
   return getAccumulatedMonth();
 };
 console.log(accumulatedMonth());
-
-// 4
+console.log(typeof accumulatedMonth());
+4
 let getTargetMonth = function () {
   return mission / accumulatedMonth();
 };
@@ -93,7 +86,8 @@ console.log(getTargetMonth());
 // 5 Удалил budgetMonth
 
 // 6
+let month = 30;
 let budgetDay = function () {
-  return Number(accumulatedMonth) / 30;
+  return accumulatedMonth() / 30;
 };
 console.log(budgetDay());
