@@ -88,6 +88,6 @@ console.log(getTargetMonth());
 // 6
 let month = 30;
 let budgetDay = function () {
-  return accumulatedMonth() / 30;
+  return Math.ceil(accumulatedMonth() / 30);
 };
 console.log(budgetDay());
