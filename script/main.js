@@ -15,11 +15,11 @@ let mission = 50000;
 let period = 3;
 
 let start = function () {
-  money = prompt("Ваш месячный доход?");
 
-  while (!isNumber(money)) {
+  do {
     money = prompt("Ваш месячный доход?");
-  }
+  } while (!isNumber(money));
+
 };
 
 start();
@@ -32,16 +32,18 @@ showTypeOf(money);
 showTypeOf(income);
 showTypeOf(deposit);
 
-let expenses = [];
-
 console.log(addExpenses.toLowerCase().split(","));
+
+
+let expenses = [];
 
 let getExpensesMonth = function () {
   let sum = 0;
   for (let i = 0; i < 2; i++) {
-    expenses[i] = prompt("Введите обязательную статью расходов?");
 
-    sum += +prompt("Во сколько это обойдется?");
+    expenses[i] = prompt("Введите обязательную статью расходов?");
+    let promptt = +prompt("Во сколько это обойдется?");
+    if (isNumber(promptt)) { sum += promptt }
   }
   console.log(expenses);
   return sum;
