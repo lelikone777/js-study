@@ -27,7 +27,7 @@ const addExpenses = function () {
     expensesList
   );
 };
-console.log(addExpenses().split(" "));
+console.log(addExpenses().split(","));
 
 let getAccumulatedMonth = function () {
   return money - getExpensesMonth();
