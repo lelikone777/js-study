@@ -91,3 +91,7 @@ let budgetDay = function () {
   return Math.ceil(accumulatedMonth() / 30);
 };
 console.log(budgetDay());
+
+const getStatusIncome = function() {
+  
+}
