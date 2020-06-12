@@ -16,7 +16,7 @@ let period = 3;
 
 let start = function () {
   do {
-    money = prompt("Ваш месячный доход?");
+    money = prompt("Ваш месячный доход?", 100000);
   } while (!isNumber(money));
 };
 
@@ -38,10 +38,10 @@ let getExpensesMonth = function () {
   let sum = 0;
   for (let i = 0; i < 2; i++) {
     expenses[i] = prompt("Введите обязательную статью расходов?");
-    let promptt = +prompt("Во сколько это обойдется?");
-    if (isNumber(promptt)) {
-      sum += promptt;
-    }
+    let promptt = prompt("Во сколько это обойдется?");
+    do {promptt}
+    while (!isNumber(promptt));
+    sum += promptt;
   }
   console.log(expenses);
   return sum;
