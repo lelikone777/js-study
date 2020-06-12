@@ -34,12 +34,12 @@ let getAccumulatedMonth = function () {
 };
 console.log(getAccumulatedMonth());
 
-let accumulatedMonth = getAccumulatedMonth;
-console.log(accumulatedMonth());
-console.log(typeof accumulatedMonth());
+let accumulatedMonth = getAccumulatedMonth();
+console.log(accumulatedMonth);
+console.log(typeof accumulatedMonth);
 
 let getTargetMonth = function () {
-  return mission / accumulatedMonth();
+  return mission / accumulatedMonth;
 };
 console.log(getTargetMonth());
 
@@ -47,7 +47,7 @@ console.log(getTargetMonth());
 
 let month = 30;
 let budgetDay = function () {
-  return Math.ceil(accumulatedMonth() / 30);
+  return Math.ceil(accumulatedMonth / 30);
 };
 console.log(budgetDay());
 
