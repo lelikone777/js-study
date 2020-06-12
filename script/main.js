@@ -27,7 +27,7 @@ const addExpenses = prompt(
 console.log("возможные расходы за рассчитываемый период: " + addExpenses);
 console.log(typeof addExpenses);
 console.log(addExpenses.length);
-console.log(addExpenses.toLowerCase().split(" "));
+console.log(addExpenses.toLowerCase().split(","));
 
 let getAccumulatedMonth = function () {
   return money - getExpensesMonth();
