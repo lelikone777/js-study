@@ -20,14 +20,11 @@ let getExpensesMonth = function () {
 };
 console.log(getExpensesMonth());
 
-const expensesList = "Вода, Еда, Фарфор, МРАМОР";
-const addExpenses = function () {
-  return prompt(
-    "Перечислите возможные расходы за рассчитываемый период через запятую",
-    expensesList
-  );
-};
-console.log(addExpenses().split(","));
+const addExpenses = prompt('Перечислите возможные расходы за рассчитываемый период через запятую', 'Вода, Еда, Фарфор, МРАМОР');
+console.log('возможные расходы за рассчитываемый период: ' + addExpenses);
+console.log(typeof addExpenses);
+console.log(addExpenses.length);
+console.log(addExpenses.toLowerCase().split(' '));
 
 let getAccumulatedMonth = function () {
   return money - getExpensesMonth();
