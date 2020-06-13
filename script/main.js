@@ -30,12 +30,28 @@ showTypeOf(money);
 showTypeOf(income);
 showTypeOf(deposit);
 
+
 console.log(addExpenses.toLowerCase().split(","));
 
-let expenses = [];
+// let expenses = [];
+
+// let getExpensesMonth = function () {
+//   let sum = 0;
+//   for (let i = 0; i < 2; i++) {
+//     expenses[i] = prompt("Введите обязательную статью расходов?");
+//     let promptt = prompt("Во сколько это обойдется?");
+//     do {
+//       promptt;
+//     } while (!isNumber(promptt));
+//     sum += promptt;
+//   }
+//   console.log(expenses);
+//   return sum;
+// };
 
 let getExpensesMonth = function () {
   let sum = 0;
+<<<<<<< Updated upstream
   for (let i = 0; i < 2; i++) {
     expenses[i] = prompt("Введите обязательную статью расходов?");
     let promptt = prompt("Во сколько это обойдется?");
@@ -43,6 +59,21 @@ let getExpensesMonth = function () {
       promptt;
     } while (!isNumber(promptt));
     sum += promptt;
+=======
+  let promptt;
+  for (let i = 0; i < 2; i++) {
+
+    if ( i === 0) {
+    let expenses1 = prompt("Введите обязательную статью расходов?", "Вода");
+    } else if ( i === 1) {
+    let expenses2 = prompt("Введите обязательную статью расходов?", "Еда");
+    }
+
+    do {promptt = prompt("Во сколько это обойдется?"); 
+  } 
+  while (!isNumber(promptt));
+    sum += +promptt;
+>>>>>>> Stashed changes
   }
   console.log(expenses);
   return sum;
