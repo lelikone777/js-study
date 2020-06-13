@@ -51,15 +51,6 @@ console.log(addExpenses.toLowerCase().split(","));
 
 let getExpensesMonth = function () {
   let sum = 0;
-<<<<<<< Updated upstream
-  for (let i = 0; i < 2; i++) {
-    expenses[i] = prompt("Введите обязательную статью расходов?");
-    let promptt = prompt("Во сколько это обойдется?");
-    do {
-      promptt;
-    } while (!isNumber(promptt));
-    sum += promptt;
-=======
   let promptt;
   for (let i = 0; i < 2; i++) {
 
@@ -73,7 +64,6 @@ let getExpensesMonth = function () {
   } 
   while (!isNumber(promptt));
     sum += +promptt;
->>>>>>> Stashed changes
   }
   console.log(expenses);
   return sum;
