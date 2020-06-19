@@ -7,13 +7,17 @@ let isNumber = function (n) {
 let money;
 
 let start = function () {
-  money = prompt("Ваш месячный доход?");
+  money = prompt("Ваш месячный доход?", 50000);
 
   while (!isNumber(money)) {
     money = prompt("Ваш месячный доход?");
   }
 };
 start();
+
+
+
+
 
 let appData = {
   income: {},
