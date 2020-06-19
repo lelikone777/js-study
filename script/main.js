@@ -1,104 +1,59 @@
-"use strict";
+'use strict';
 
-let isNumber = function (n) {
+let isNumber = function(n) {
   return !isNaN(parseFloat(n)) && isFinite(n);
 };
 
-let money;
-let income = "Фриланс";
-let addExpenses = prompt(
-  "Перечислите возможные расходы за рассчитываемый период через запятую",
-  "Вода, Еда, Фарфор, МРАМОР"
-);
-let deposit = confirm("Есть ли у вас депозит в банке?");
-let mission = 50000;
-let period = 3;
+function askNumber() {
 
-let start = function () {
-  do {
-    money = prompt("Ваш месячный доход?", 100000);
-  } while (!isNumber(money));
-};
-
-start();
-
-let showTypeOf = function (item) {
-  console.log(typeof item);
-};
-
-showTypeOf(money);
-showTypeOf(income);
-showTypeOf(deposit);
-
-console.log(addExpenses.toLowerCase().split(","));
-
-// let expenses = [];
-
-// let getExpensesMonth = function () {
-//   let sum = 0;
-//   for (let i = 0; i < 2; i++) {
-//     expenses[i] = prompt("Введите обязательную статью расходов?");
-//     let promptt = prompt("Во сколько это обойдется?");
-//     do {
-//       promptt;
-//     } while (!isNumber(promptt));
-//     sum += promptt;
-//   }
-//   console.log(expenses);
-//   return sum;
-// };
-
-let getExpensesMonth = function () {
-  let sum = 0;
-  let promptt;
-  for (let i = 0; i < 2; i++) {
-    if (i === 0) {
-      let expenses1 = prompt("Введите обязательную статью расходов?", "Вода");
-    } else if (i === 1) {
-      let expenses2 = prompt("Введите обязательную статью расходов?", "Еда");
+    function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min - 1)) + min;
     }
 
-    do {
-      promptt = prompt("Во сколько это обойдется?");
-    } while (!isNumber(promptt));
-    sum += +promptt;
-  }
-  console.log(expenses);
-  return sum;
-};
+    let compNumber = getRandomInt(1, 100);
+    console.log(compNumber); // читерное число компьютера
 
-let expensesAmount = getExpensesMonth();
+    function enterNumber() {
 
-console.log("Расходы за месяц: " + expensesAmount);
+        const userNumber = prompt("Угадай число от 1 до 100"); // число пользователя
 
-let getAccumulatedMonth = function () {
-  return money - expensesAmount;
-};
+        if (!userNumber && userNumber !== '0') {
+            return;
+        }
 
-let accumulatedMonth = getAccumulatedMonth();
+            if (isNumber(userNumber)) {
+                const number = +userNumber;
 
-let getTargetMonth = function () {
-  return Math.ceil(mission / accumulatedMonth);
-};
-if (getTargetMonth() > -1) {
-  console.log("Цель будет достигнута за " + getTargetMonth() + " месяца");
-} else {
-  console.log("Цель не будет достигнута");
+                if (number > 100 || number < 1) {
+                    alert("Введите число от 1 до 100!");
+
+                } else {
+
+                    if (userNumber < compNumber) {
+
+                        alert('Загаданное число больше');
+
+                    } else if (userNumber > compNumber) {
+
+                        alert('Загаданное число меньше');
+
+                    } else {
+
+                        alert('Ты угадал!!! Поздравляем!!!');
+                        return;
+
+                    }
+
+                }
+
+            } else {
+
+                alert('Введи число!');
+
+            }
+            enterNumber();
+    }
+    enterNumber();
+
 }
-
-let budgetDay = function () {
-  return Math.ceil(accumulatedMonth / 30);
-};
-
-const getStatusIncome = function () {
-  if (accumulatedMonth > 1200) {
-    return "У вас высокий уровень дохода";
-  } else if (accumulatedMonth > 600 && accumulatedMonth <= 1200) {
-    return "У вас средний уровень дохода";
-  } else if (accumulatedMonth <= 600 && accumulatedMonth > 0) {
-    return "К сожалению у вас уровень дохода ниже среднего";
-  } else if (accumulatedMonth <= 0) {
-    return "Что то пошло не так";
-  }
-};
-console.log(getStatusIncome());
+askNumber();
