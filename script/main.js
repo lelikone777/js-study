@@ -104,7 +104,6 @@ for (let key in appData) {
 =================
 'use strict'
 
-//         sum += +question;
 let money;
 let start = function () {
   do {
