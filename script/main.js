@@ -98,3 +98,108 @@ for (let key in appData) {
     "Наша программа включает в себя данные:  " + key + ": " + appData[key]
   );
 }
+
+
+
+// =================
+// 'use strict'
+
+// let money;
+// let start = function () {
+//   do {
+//     money = prompt("Ваш месячный доход?", 50000);
+//   } while (isNaN(money) || money === '' || money === null);
+// };
+// start();
+
+//   let appData = {
+//     income: {},
+//     addIncome: [],
+//     expenses: {},
+//     addExpenses: [],
+//     deposit: false,
+//     mission: 50000,
+//     period: 3,
+//     asking: function(){
+//       let addExpenses = prompt(
+//     "Перечислите возможные расходы за рассчитываемый период через запятую",
+//     "Вода, Еда, Фарфор, МРАМОР");
+//     appData.addExpenses = addExpenses.toLowerCase().split(",")
+//     appData.deposit = confirm("Есть ли у вас депозит в банке?");
+//     }
+//   }
+
+// let showTypeOf = function (item) {
+//   console.log(typeof item);
+// };
+// showTypeOf(money);
+// showTypeOf(appData.income);
+// showTypeOf(appData.deposit);
+
+// let expenses1,
+//     expenses2;
+
+
+// let getExpensesMonth = function(){
+//   let sum = 0, question;
+
+//   for (let i = 0; i < 2; i++){
+
+//         if (i === 0) {
+//           expenses1 = prompt('Введите обязательную статью расходов?', 'Садик Государственный');
+//         } else {
+//           expenses2 = prompt('Введите обязательную статью расходов?', 'Садик частный');
+//         }
+        
+//         do {
+//           question = prompt('Во сколько это обойдется?', 2500);
+//         }
+//         while(isNaN(question) || question === '' || question === null);
+
+//         sum += +question;
+//        }
+//       return sum;
+// }
+
+// let expensesMonth = getExpensesMonth();
+
+// console.log('Расходы за месяц: ' + expensesMonth);
+
+// let getAccumulatedMonth = function(){
+//   return money - expensesMonth;
+// };
+
+// let getTargetMonth = function(){
+//   return appData.mission / getAccumulatedMonth();
+// };
+
+// let budgetDay = getAccumulatedMonth()/30;
+
+// if (getTargetMonth() > 0) {
+//   console.log('Цель будет достигнута за ' + Math.ceil(getTargetMonth()) + ' месяца');
+// } else {
+//   console.log('Цель будет достигнута');
+// }
+
+// let getStatusIncome = function(){
+//   if(budgetDay > 800){
+//     return('Высокий уровень дохода');
+
+//   } else if (budgetDay > 300){
+//     return('Средний уровень дохода');
+
+//   } else if (budgetDay > 0){
+//     return ('Низкий уровень дохода')
+
+//   }else {
+//     return ('Что то пошло не так!');
+//   }
+// };
+
+// console.log(getStatusIncome());
+
+
+
+
+
+
