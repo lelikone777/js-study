@@ -33,7 +33,7 @@ console.log(book[0]);
 console.log(book[1]);
 // book[0].remove();
 // book[2].remove();
-book[0].before(book[1]);
-book[5].prepend(book[2]);
+//book[0].before(book[1]);
+//book[5].prepend(book[2]);
 
-hhj
+
