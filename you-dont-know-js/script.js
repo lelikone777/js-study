@@ -29,10 +29,9 @@ let periodSelect = document.querySelector('.period-select');
 
 let book = document.querySelectorAll('.book');
 console.log(book);
-console.log(book[0]);
-console.log(book[1]);
-// book[0].remove();
-// book[2].remove();
+
 book[0].before(book[1]);
-book[5].prepend(book[2]);
+book[2].before(book[4]);
+book[5].before(book[2]);
+book[2].before(book[5]);
 
