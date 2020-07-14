@@ -35,3 +35,8 @@ book[2].before(book[4]);
 book[5].before(book[2]);
 book[2].before(book[5]);
 
+document.body.style.backgroundImage = "url('image/you-dont-know-js.jpg')";
+
+// let Book4Title = document.querySelector(book[4].h2.a);
+// console.log(Book4Title)
+// // "Книга 3. this и Прототипы Объектов"
