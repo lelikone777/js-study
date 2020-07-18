@@ -24,5 +24,7 @@ let expensesAmount = document.querySelector('.expenses-amount');
 let additionalExpenses = document.querySelector('.additional_expenses');
 let periodSelect = document.querySelector('.period-select');
 console.log(periodSelect);
+
+
 let books = document.querySelectorAll('.books');
 console.log(books);
