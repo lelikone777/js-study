@@ -22,8 +22,6 @@ let additionalExpenses = document.querySelector('.additional_expenses');
 let periodSelect = document.querySelector('.period-select');
 
 
-
-
 // let books = document.querySelectorAll('.books');
 // console.log(books);
 
@@ -37,8 +35,25 @@ book[2].before(book[5]);
 
 document.body.style.backgroundImage = "url('image/you-dont-know-js.jpg')";
 
- 
+book[4].children[0].children[0].textContent = 'Книга 3. this и Прототипы Объектов';
 
-// let Book4Title = document.querySelector(book[4].h2.a);
-// console.log(Book4Title)
-// // "Книга 3. this и Прототипы Объектов"
+let adv = document.querySelector('.adv');
+adv.remove();
+
+
+
+let book2Chapters = book[0].children[1].children;
+console.log(book2Chapters);
+
+book2Chapters[10].before(book2Chapters[2]);
+book2Chapters[5].after(book2Chapters[6]);
+book2Chapters[8].before(book2Chapters[6]);
+book2Chapters[2].after(book2Chapters[6]);
+book2Chapters[2].after(book2Chapters[6]);
+
+let book5Chapters = book[5].children[1].children;
+console.log(book5Chapters);
+
+book5Chapters[1].after(book5Chapters[9]);
+book5Chapters[5].after(book5Chapters[3]);
+book5Chapters[8].after(book5Chapters[6]);
