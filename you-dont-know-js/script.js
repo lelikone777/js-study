@@ -57,3 +57,9 @@ console.log(book5Chapters);
 book5Chapters[1].after(book5Chapters[9]);
 book5Chapters[5].after(book5Chapters[3]);
 book5Chapters[8].after(book5Chapters[6]);
+
+let book6Chapters = book[2].children[1].children;
+console.log(book6Chapters);
+let newChapter = document.createElement('li');
+book6Chapters[8].append(newChapter);
+newChapter.textContent = 'Глава 8: За пределами ES6';
