@@ -28,12 +28,29 @@ console.log("Цель будет достигнута через " + period + " 
 // console.log(addExpenses.toLowerCase().split(", "));
 // console.log(budgetDay);
 
-  if (budgetDay >= 1200) {
-    console.log("У вас высокий уровень дохода");
-  } else if (budgetDay >= 600 && budgetDay < 1200) {
-    console.log("У вас средний  уровень дохода");
-  } else if (budgetDay < 600 && budgetDay >= 0) {
-    console.log("К сожалению у вас уровень дохода ниже среднего");
-  } else {
-    console.log("“Что то пошло не так”");
-  }
+if (budgetDay >= 1200) {
+  console.log("У вас высокий уровень дохода");
+} else if (budgetDay >= 600 && budgetDay < 1200) {
+  console.log("У вас средний  уровень дохода");
+} else if (budgetDay < 600 && budgetDay >= 0) {
+  console.log("К сожалению у вас уровень дохода ниже среднего");
+} else {
+  console.log("“Что то пошло не так”");
+}
+
+let lang = "ru";
+
+let engDays = "monday, tuesday, wednesday, fourthday, friday, saturday, sunday";
+
+let rusDays =
+  "понедельник, вторник, среда, четверг, пятница, суббота, воскресенье";
+
+switch (lang) {
+  case "en":
+    console.log(engDays);
+    break;
+  case "ru":
+    console.log(rusDays);
+    break;
+}
+let namePerson = "Артем";
