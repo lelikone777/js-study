@@ -53,4 +53,4 @@ switch (lang) {
     console.log(rusDays);
     break;
 }
-let namePerson = "Артем";
+
